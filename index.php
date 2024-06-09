@@ -125,7 +125,7 @@
         <div class="home__container container grid">
         <?php
           // Veritabanından verileri sorgula
-          $sql = "SELECT linkedin, github, medium FROM anasayfa WHERE id=1";
+          $sql = "SELECT linkedin, github, medium FROM anasayfa ORDER BY id DESC LIMIT 1";
           $result = $baglan->query($sql);
 
           if ($result->num_rows > 0) {
@@ -155,7 +155,7 @@
             <div class="home__description">
             <?php
               // Anasayfa içeriğini al
-              $query = "SELECT icerik FROM anasayfa WHERE id=1";
+              $query = "SELECT icerik FROM anasayfa ORDER BY id DESC LIMIT 1";
               $result = $baglan->query($query);
 
               $anasayfaIcerik = "";
@@ -215,7 +215,7 @@
             <h3 class="about__heading">Ben, Mervenur Altunkaya</h3>
             <?php
               // Anasayfa içeriğini al
-              $query = "SELECT hakkimda FROM anasayfa WHERE id=1";
+              $query = "SELECT hakkimda FROM anasayfa ORDER BY id DESC LIMIT 1";
               $result = $baglan->query($query);
               $anasayfaHakkimda = "";
 

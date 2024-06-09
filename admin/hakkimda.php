@@ -9,7 +9,7 @@ $hakkimda = $_POST['hakkimda'] ?? '';
 $icerik = $_POST['icerik'] ?? '';
 
 // Verileri veritabanına ekleyen sorgu
-$sql = "UPDATE anasayfa SET linkedin='$linkedin', github='$github', medium='$medium', hakkimda='$hakkimda', icerik='$icerik' WHERE id=1";
+$sql = "INSERT INTO `anasayfa`( `icerik`, `hakkimda`, `linkedin`, `github`, `medium`) VALUES ('$icerik','$hakkimda','$linkedin','$github','$medium')";
 
 // SQL sorgusunu çalıştır
 if ($baglan->query($sql) === TRUE) {

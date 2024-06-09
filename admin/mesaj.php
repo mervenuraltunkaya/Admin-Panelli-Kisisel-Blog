@@ -1,3 +1,19 @@
+<?php
+include("../baglanti.php");
+
+// Veri silme işlemi
+if (isset($_GET['delete'])) {
+  $id = $_GET['delete'];
+  $sql = "DELETE FROM iletisim WHERE id=$id";
+  if ($baglan->query($sql) === TRUE) {
+      header("Location: mesaj.php");
+  } else {
+      echo "Hata: " . $baglan->error;
+  }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -72,17 +88,3 @@
     </div>
 </body>
 </html>
-<?php
-include("../baglanti.php");
-
-// Veri silme işlemi
-if (isset($_GET['delete'])) {
-  $id = $_GET['delete'];
-  $sql = "DELETE FROM iletisim WHERE id=$id";
-  if ($baglan->query($sql) === TRUE) {
-      header("Location: mesaj.php");
-  } else {
-      echo "Hata: " . $baglan->error;
-  }
-}
-?>

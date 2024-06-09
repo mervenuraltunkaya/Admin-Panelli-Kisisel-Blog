@@ -7,8 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
 
-    // Kullanıcı adı ve şifreyi veritabanında güncelleyelim
-    $sql = "UPDATE admin SET kullanici_adi='$username', sifre='$password' WHERE id=0"; // Burada id=0, varsayılan admin kullanıcısını belirtir. Eğer farklı bir yapı kullanıyorsanız bu sorguyu buna göre ayarlayın.
+    // Kullanıcı adı ve şifreyi veritabanında güncelleme
+    $sql = "UPDATE admin SET sifre='$password' WHERE kullanici_adi='$username'"; // Burada id=0, varsayılan admin kullanıcısını belirtir. Eğer farklı bir yapı kullanıyorsanız bu sorguyu buna göre ayarlayın.
 
     if ($baglan->query($sql) === TRUE) {
     } else {

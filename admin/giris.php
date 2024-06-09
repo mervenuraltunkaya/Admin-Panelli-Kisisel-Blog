@@ -35,6 +35,7 @@ if (isset($_POST["kullanici_adi"], $_POST["sifre"])) {
             <a href="anasayfa.html">
                 <img src="../images/mervenur.jpg" alt="logo" class="admin_img" />
             </a>
+            <!-- Giriş Formu -->
             <h2>Giriş Yap</h2>
             <form action="giris.php" method="post">
                 <div class="txtb">
@@ -55,7 +56,8 @@ if (isset($_POST["kullanici_adi"], $_POST["sifre"])) {
                         required
                     />
                 </div>
-                <input type="submit" class="logbtn" value="Giriş Yap" />
+                <input type="submit" class="logbtn" value="Giriş Yap" style="margin-bottom: 15px;" />
+                <div><a href="uyeOl.php" >Üye Ol!</a></div>
             </form>
         </div>
     </div>
