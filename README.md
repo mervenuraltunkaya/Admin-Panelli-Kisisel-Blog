@@ -105,4 +105,3 @@ XAMPP veya benzeri programı çalıştırın. (XAMPP için Apache ve MySQL çal�
 Tarayıcınızda projenin klasörünün yolunu ziyaret ederek web sitesini görüntüleyin. (Örneğin: http://localhost/WebSiteGuncel/index.php)
 
 <h2>Proje İçeriğinden Görseller: </h2>
-![giris](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/75ab9bcc-6c80-44d2-a658-68161f201a1a)
