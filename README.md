@@ -105,12 +105,4 @@ XAMPP veya benzeri programı çalıştırın. (XAMPP için Apache ve MySQL çal�
 Tarayıcınızda projenin klasörünün yolunu ziyaret ederek web sitesini görüntüleyin. (Örneğin: http://localhost/WebSiteGuncel/index.php)
 
 <h2>Proje İçeriğinden Görseller: </h2>
-![tema](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/68ac8494-4501-4f1f-a1d2-d5333d1c91d7)
-![skills](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/7fd66957-d43f-448e-a3e5-d0925db98315)
-![sertifika](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/eda352bf-58f3-4441-bab2-42eae12bf45a)
-![referans](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/3fbf4a0d-e3bf-429d-9bd3-97b8a7473f52)
-![proje](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/230e1389-60ff-4b3c-aeec-518dc6508d7b)
-![iletisim](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/81b06b2b-fc45-440c-a9ec-1b299fa02cd4)
-![hakkimda](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/eefcba69-ecd4-42e5-b140-866e0f40bed8)
-![giris](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/c52f8764-2c4a-4595-baef-225df893dca9)
-![aydinlikTema](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/b63b94a8-a438-4872-bf64-34987c05dc7c)
+![giris](https://github.com/mervenuraltunkaya/Admin-Panelli-Kisisel-Blog/assets/106298738/75ab9bcc-6c80-44d2-a658-68161f201a1a)
