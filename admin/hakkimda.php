@@ -50,7 +50,6 @@ $baglan->close();
                 <li><a href="sertifika.php">Sertifikalar</a></li>
                 <li><a href="referans.php">Referanslar</a></li>
                 <li><a href="mesaj.php">Gelen Mesajlar</a></li>
-                <li><a href="ayarlar.php">Ayarlar</a></li>
             </ul>
       </div>
 
