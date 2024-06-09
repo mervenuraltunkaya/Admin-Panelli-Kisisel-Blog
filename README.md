@@ -107,4 +107,38 @@ Tarayıcınızda projenin klasörünün yolunu ziyaret ederek web sitesini gör�
 
 <h2>Proje İçeriğinden Görseller: </h2>
 
-![Örnek Resim](projeTanitim/giris.png)
+Giriş:
+
+![Giris](projeTanitim/giris.png)
+
+Anasayfa:
+
+![Hakkımda](projeTanitim/hakkimda.png)
+
+Eğitim - Deneyim - Yetkinlik:
+
+![skills](projeTanitim/skills.png)
+
+Proje:
+
+![proje](projeTanitim/proje.png)
+
+Sertifika:
+
+![sertifika](projeTanitim/sertifika.png)
+
+Referans:
+
+![referans](projeTanitim/referans.png)
+
+İletişim:
+
+![iletisim](projeTanitim/iletisim.png)
+
+Bu blog sitesi farklı renklerde aydınlık ve karanlık temalarda kullanılabilir.
+
+![tema](projeTanitim/tema.png)
+![aydinlikTema](projeTanitim/aydinlikTema.png)
+
+Web sitesi, farklı ekran boyutlarına uygunluk gösterir.
+![responsive](projeTanitim/responsive.png)
