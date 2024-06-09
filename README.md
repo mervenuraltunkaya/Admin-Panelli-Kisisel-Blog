@@ -105,7 +105,7 @@ Projenin içinde bulunan yönetici paneline erişmek için bir kullanıcı adı 
 XAMPP veya benzeri programı çalıştırın. (XAMPP için Apache ve MySQL çalışmalı.)
 Tarayıcınızda projenin klasörünün yolunu ziyaret ederek web sitesini görüntüleyin. (Örneğin: http://localhost/WebSiteGuncel/index.php)
 
-<h2>Proje İçeriğinden Görseller: </h2>
+<h2>Blog Sitesinden Görseller: </h2>
 
 Giriş:
 
@@ -144,3 +144,9 @@ Bu blog sitesi farklı renklerde aydınlık ve karanlık temalarda kullanılabil
 Web sitesi, farklı ekran boyutlarına uygunluk gösterir.
 
 ![responsive](projeTanitim/responsive.png)
+
+<h2>Admin Panelinden Görseller: </h2>
+
+![girisYap](projeTanitim/girisYap.png)
+
+![panelYetkinlik](projeTanitim/panelYetkinlik.png)

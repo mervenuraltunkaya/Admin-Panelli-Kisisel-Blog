@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            
                             <th>Proje Adı</th>
                             <th>Proje Tipi</th>
                             <th>Proje Açıklaması</th>
@@ -157,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
                         if ($sonuc->num_rows > 0) {
                             while ($cek = $sonuc->fetch_assoc()) {
                                 echo "<tr>";
-                                echo "<td>" . $cek['id'] . "</td>";
+                                
                                 echo "<td>" . $cek['proje_adi'] . "</td>";
                                 echo "<td>" . $cek['proje_turu'] . "</td>";
                                 echo "<td>" . $cek['proje_aciklama'] . "</td>";
