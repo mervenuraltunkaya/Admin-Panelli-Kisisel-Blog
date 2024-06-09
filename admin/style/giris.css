@@ -1,0 +1,136 @@
+:root {
+  --hue-color: 242; /* Ana renk tonu */
+
+  --skin-color: hsl(2, 83%, 33%); /* Ana tema rengi */
+  --skin-color-light: hsla(2, 100%, 83%); /* Ana tema renginin açık hali */
+  --title-color: hsl(var(--hue-color), 8%, 95%); /* Başlık rengi */
+  --text-color: hsl(var(--hue-color), 8%, 85%); /* Metin rengi */
+  --body-color: hsl(var(--hue-color), 19%, 5%); /* Gövde rengi (arka plan) */
+  --box-color: hsl(var(--hue-color), 14%, 10%); /* Kutu ve kartların rengi */
+  --scroll-bar-color: hsl(
+    var(--hue-color),
+    12%,
+    38%
+  ); /* Kaydırma çubuğu rengi */
+  --scroll-thumb-color: hsl(
+    var(--hue-color),
+    12%,
+    26%
+  ); /* Kaydırma çubuğu başlığının rengi */
+
+  --body-font: "Poppins", sans-serif; /* Kullanılacak font ailesi */
+
+  --biggest-font-size: 3rem; /* En büyük yazı tipi boyutu */
+  --h1-font-size: 2.25rem; /* h1 elemanlarının yazı tipi boyutu */
+  --h2-font-size: 1.5rem; /* h2 elemanlarının yazı tipi boyutu */
+  --h3-font-size: 1.25rem; /* h3 elemanlarının yazı tipi boyutu */
+  --normal-font-size: 1rem; /* Normal yazı tipi boyutu */
+  --small-font-size: 0.875rem; /* Küçük yazı tipi boyutu */
+  --smaller-font-size: 0.813rem; /* Daha küçük yazı tipi boyutu */
+  --minik-font-size: 0.6rem;
+
+  /* Yazı tipi ağırlıkları */
+  --font-medium: 500; /* Orta kalınlıkta yazı tipi */
+  --font-bold: 600; /* Kalın yazı tipi */
+
+  /* Margin-bottom değerleri */
+  --mb-0-25: 0.25rem; /* 0.25rem alt boşluk */
+  --mb-0-5: 0.5rem; /* 0.5rem alt boşluk */
+  --mb-0-75: 0.75rem; /* 0.75rem alt boşluk */
+  --mb-1: 1rem; /* 1rem alt boşluk */
+  --mb-1-5: 1.5rem; /* 1.5rem alt boşluk */
+  --mb-2: 2rem; /* 2rem alt boşluk */
+  --mb-2-5: 2.5rem; /* 2.5rem alt boşluk */
+  --mb-3: 3rem; /* 3rem alt boşluk */
+
+  --z-fixed: 10; /* Z-index sabit */
+  --z-model: 100; /* Z-index model */
+}
+
+/* Genel ayarlar */
+* {
+  margin: 0; /* Varsayılan margin sıfırlama */
+  padding: 0; /* Varsayılan padding sıfırlama */
+  box-sizing: border-box; /* Border-box modelini kullanma */
+  font-family: "Poppins"; /* Genel font ailesi */
+  text-decoration: none; /* Metin dekorasyonunu kaldırma */
+}
+
+/* Paragraf stili */
+p {
+  color: var(--text-color); /* Paragraf metni rengi */
+  padding: 35px; /* İç kenar boşluğu */
+}
+
+/* Bağlantı stili */
+a {
+  color: #a0bac9; /* Bağlantı metni rengi */
+}
+
+/* Body stili */
+body {
+  background-color: var(--body-color); /* Arkaplan rengi */
+}
+
+/* Başlık (h2) stili */
+h2 {
+  color: var(--title-color); /* Başlık rengi */
+}
+
+/* Konteyner stili */
+.container {
+  width: 400px; /* Genişlik */
+  background-color: var(--box-color); /* Arkaplan rengi */
+  height: auto; /* Yükseklik */
+  padding: 80px 40px; /* İç kenar boşluğu */
+  border-radius: 10px; /* Kenar yuvarlatma */
+  position: absolute; /* Mutlak konumlandırma */
+  left: 50%; /* Sol kenardan %50 uzaklık */
+  top: 50%; /* Üst kenardan %50 uzaklık */
+  transform: translate(-50%, -50%); /* Merkeze hizalama */
+  text-align: center; /* İçerikleri yatay olarak ortalama */
+}
+
+/* Metin kutusu stili */
+.txtb {
+  border-bottom: 2px solid var(--title-color); /* Alt kenarlık */
+  position: relative; /* Göreceli konumlandırma */
+  margin: 30px 0; /* Üst ve alt dış kenar boşluğu */
+}
+
+/* Metin kutusu içindeki input stili */
+.txtb input {
+  font-size: 15px; /* Font boyutu */
+  color: var(--text-color); /* Metin rengi */
+  border: none; /* Kenarlık yok */
+  width: 100%; /* Genişlik */
+  background: none; /* Arkaplan yok */
+  padding: 0 5px; /* İç kenar boşluğu */
+  height: 40px; /* Yükseklik */
+}
+
+/* Admin resim stili */
+img.admin_img {
+  border-radius: 100%; /* Tam yuvarlak kenar */
+  margin-bottom: 50px; /* Alt dış kenar boşluğu */
+  margin-top: -10px; /* Üst dış kenar boşluğu */
+  display: block; /* Blok elementi olarak göster */
+  width: 200px; /* Genişlik */
+  margin-left: auto; /* Sol kenardan otomatik margin */
+  margin-right: auto; /* Sağ kenardan otomatik margin */
+}
+
+/* Giriş butonu stili */
+.logbtn {
+  display: block; /* Blok elementi olarak göster */
+  width: 100%; /* Genişlik */
+  height: 50px; /* Yükseklik */
+  border: none; /* Kenarlık yok */
+  background-color: var(--text-color); /* Arkaplan rengi */
+  border-radius: 15px; /* Kenar yuvarlatma */
+}
+
+/* Giriş butonu hover efekti */
+.logbtn:hover {
+  color: var(--box-color); /* Metin rengi (fare üstüne gelindiğinde) */
+}

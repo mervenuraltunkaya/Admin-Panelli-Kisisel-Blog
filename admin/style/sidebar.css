@@ -1,0 +1,109 @@
+:root {
+  --hue-color: 242; /* Ana renk tonu */
+
+  --skin-color: hsl(2, 83%, 33%); /* Ana tema rengi */
+  --skin-color-light: hsla(2, 100%, 83%); /* Ana tema renginin açık hali */
+  --title-color: hsl(var(--hue-color), 8%, 95%); /* Başlık rengi */
+  --text-color: hsl(var(--hue-color), 8%, 85%); /* Metin rengi */
+  --body-color: hsl(var(--hue-color), 19%, 5%); /* Gövde rengi (arka plan) */
+  --box-color: hsl(var(--hue-color), 14%, 10%); /* Kutu ve kartların rengi */
+  --scroll-bar-color: hsl(
+    var(--hue-color),
+    12%,
+    38%
+  ); /* Kaydırma çubuğu rengi */
+  --scroll-thumb-color: hsl(
+    var(--hue-color),
+    12%,
+    26%
+  ); /* Kaydırma çubuğu başlığının rengi */
+
+  --body-font: "Poppins", sans-serif; /* Kullanılacak font ailesi */
+
+  --biggest-font-size: 3rem; /* En büyük yazı tipi boyutu */
+  --h1-font-size: 2.25rem; /* h1 elemanlarının yazı tipi boyutu */
+  --h2-font-size: 1.5rem; /* h2 elemanlarının yazı tipi boyutu */
+  --h3-font-size: 1.25rem; /* h3 elemanlarının yazı tipi boyutu */
+  --normal-font-size: 1rem; /* Normal yazı tipi boyutu */
+  --small-font-size: 0.875rem; /* Küçük yazı tipi boyutu */
+  --smaller-font-size: 0.813rem; /* Daha küçük yazı tipi boyutu */
+  --minik-font-size: 0.6rem;
+
+  /* Yazı tipi ağırlıkları */
+  --font-medium: 500; /* Orta kalınlıkta yazı tipi */
+  --font-bold: 600; /* Kalın yazı tipi */
+
+  /* Margin-bottom değerleri */
+  --mb-0-25: 0.25rem; /* 0.25rem alt boşluk */
+  --mb-0-5: 0.5rem; /* 0.5rem alt boşluk */
+  --mb-0-75: 0.75rem; /* 0.75rem alt boşluk */
+  --mb-1: 1rem; /* 1rem alt boşluk */
+  --mb-1-5: 1.5rem; /* 1.5rem alt boşluk */
+  --mb-2: 2rem; /* 2rem alt boşluk */
+  --mb-2-5: 2.5rem; /* 2.5rem alt boşluk */
+  --mb-3: 3rem; /* 3rem alt boşluk */
+
+  --z-fixed: 10; /* Z-index sabit */
+  --z-model: 100; /* Z-index model */
+}
+
+body {
+  margin: 0; /* Sayfa kenar boşluklarını sıfırla */
+  padding: 0; /* Sayfa içerisindeki boşlukları sıfırla */
+  background-color: var(--body-color); /* Sayfa arkaplan rengini belirle */
+}
+
+.container {
+  display: flex; /* İçerikleri yatay olarak hizala */
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* İmajı yatayda merkezlemek için */
+  margin-bottom: 20px; /* İmaj ile diğer içerik arasına boşluk bırakmak için */
+}
+
+.sidebar {
+  background-color: var(--box-color); /* Yan menü arkaplan rengini belirle */
+  color: var(--text-color); /* Yan menü yazı rengini belirle */
+  padding: 20px; /* Yan menü içerisindeki boşlukları belirle */
+  width: 200px; /* Yan menü genişliğini belirle */
+}
+
+.sidebar h2 {
+  margin-bottom: 20px; /* Yan menü başlıkları arasındaki boşluğu belirle */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Liste işaretlerini kaldır */
+  padding: 0; /* Liste içerisindeki boşlukları sıfırla */
+}
+
+.sidebar ul li {
+  margin-bottom: 30px; /* Liste öğeleri arasındaki boşluğu belirle */
+}
+
+.sidebar ul li a {
+  color: var(--text-color); /* Liste öğesi bağlantılarının rengini belirle */
+  text-decoration: none; /* Liste öğesi bağlantılarının alt çizgisini kaldır */
+}
+
+/*DÜZENLE VE SİL*/
+
+/* Düzenle ve Sil bağlantıları için genel stil */
+.admin-panel__table a {
+  text-decoration: none; /* Bağlantı alt çizgisini kaldır */
+  color: var(--skin-color-light); /* Bağlantı rengi */
+  margin-right: 10px; /* Sağdan boşluk */
+}
+
+.admin-panel__table a:hover {
+  text-decoration: underline; /* Fare üzerine geldiğinde alt çizgi ekleyin */
+}
+
+/* Sil bağlantısının rengini değiştirme */
+.admin-panel__table a.delete {
+  color: var(--skin-color); /* Silme işlemine özel bir renk */
+}

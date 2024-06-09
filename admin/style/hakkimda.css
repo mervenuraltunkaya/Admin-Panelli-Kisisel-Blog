@@ -1,0 +1,125 @@
+:root {
+  --hue-color: 242; /* Ana renk tonu */
+
+  --skin-color: hsl(2, 83%, 33%); /* Ana tema rengi */
+  --skin-color-light: hsla(2, 100%, 83%); /* Ana tema renginin açık hali */
+  --title-color: hsl(var(--hue-color), 8%, 95%); /* Başlık rengi */
+  --text-color: hsl(var(--hue-color), 8%, 85%); /* Metin rengi */
+  --body-color: hsl(var(--hue-color), 19%, 5%); /* Gövde rengi (arka plan) */
+  --box-color: hsl(var(--hue-color), 14%, 10%); /* Kutu ve kartların rengi */
+  --scroll-bar-color: hsl(
+    var(--hue-color),
+    12%,
+    38%
+  ); /* Kaydırma çubuğu rengi */
+  --scroll-thumb-color: hsl(
+    var(--hue-color),
+    12%,
+    26%
+  ); /* Kaydırma çubuğu başlığının rengi */
+
+  --body-font: "Poppins", sans-serif; /* Kullanılacak font ailesi */
+
+  --biggest-font-size: 3rem; /* En büyük yazı tipi boyutu */
+  --h1-font-size: 2.25rem; /* h1 elemanlarının yazı tipi boyutu */
+  --h2-font-size: 1.5rem; /* h2 elemanlarının yazı tipi boyutu */
+  --h3-font-size: 1.25rem; /* h3 elemanlarının yazı tipi boyutu */
+  --normal-font-size: 1rem; /* Normal yazı tipi boyutu */
+  --small-font-size: 0.875rem; /* Küçük yazı tipi boyutu */
+  --smaller-font-size: 0.813rem; /* Daha küçük yazı tipi boyutu */
+  --minik-font-size: 0.6rem;
+
+  /* Yazı tipi ağırlıkları */
+  --font-medium: 500; /* Orta kalınlıkta yazı tipi */
+  --font-bold: 600; /* Kalın yazı tipi */
+
+  /* Margin-bottom değerleri */
+  --mb-0-25: 0.25rem; /* 0.25rem alt boşluk */
+  --mb-0-5: 0.5rem; /* 0.5rem alt boşluk */
+  --mb-0-75: 0.75rem; /* 0.75rem alt boşluk */
+  --mb-1: 1rem; /* 1rem alt boşluk */
+  --mb-1-5: 1.5rem; /* 1.5rem alt boşluk */
+  --mb-2: 2rem; /* 2rem alt boşluk */
+  --mb-2-5: 2.5rem; /* 2.5rem alt boşluk */
+  --mb-3: 3rem; /* 3rem alt boşluk */
+
+  --z-fixed: 10; /* Z-index sabit */
+  --z-model: 100; /* Z-index model */
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+form {
+  padding: 20px;
+}
+
+.content {
+  background-color: var(--box-color);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Yatay yeniden boyutlandırmayı devre dışı bırak */
+}
+
+label {
+  color: var(--text-color);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.form-group label i {
+  margin-right: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: var(--skin-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+button:hover {
+  background-color: var(--box-color);
+}

@@ -1,0 +1,161 @@
+:root {
+  --hue-color: 242; /* Ana renk tonu */
+
+  --skin-color: hsl(2, 83%, 33%); /* Ana tema rengi */
+  --skin-color-light: hsla(2, 100%, 83%); /* Ana tema renginin açık hali */
+  --title-color: hsl(var(--hue-color), 8%, 95%); /* Başlık rengi */
+  --text-color: hsl(var(--hue-color), 8%, 85%); /* Metin rengi */
+  --body-color: hsl(var(--hue-color), 19%, 5%); /* Gövde rengi (arka plan) */
+  --box-color: hsl(var(--hue-color), 14%, 10%); /* Kutu ve kartların rengi */
+  --scroll-bar-color: hsl(
+    var(--hue-color),
+    12%,
+    38%
+  ); /* Kaydırma çubuğu rengi */
+  --scroll-thumb-color: hsl(
+    var(--hue-color),
+    12%,
+    26%
+  ); /* Kaydırma çubuğu başlığının rengi */
+
+  --body-font: "Poppins", sans-serif; /* Kullanılacak font ailesi */
+
+  --biggest-font-size: 3rem; /* En büyük yazı tipi boyutu */
+  --h1-font-size: 2.25rem; /* h1 elemanlarının yazı tipi boyutu */
+  --h2-font-size: 1.5rem; /* h2 elemanlarının yazı tipi boyutu */
+  --h3-font-size: 1.25rem; /* h3 elemanlarının yazı tipi boyutu */
+  --normal-font-size: 1rem; /* Normal yazı tipi boyutu */
+  --small-font-size: 0.875rem; /* Küçük yazı tipi boyutu */
+  --smaller-font-size: 0.813rem; /* Daha küçük yazı tipi boyutu */
+  --minik-font-size: 0.6rem;
+
+  /* Yazı tipi ağırlıkları */
+  --font-medium: 500; /* Orta kalınlıkta yazı tipi */
+  --font-bold: 600; /* Kalın yazı tipi */
+
+  /* Margin-bottom değerleri */
+  --mb-0-25: 0.25rem; /* 0.25rem alt boşluk */
+  --mb-0-5: 0.5rem; /* 0.5rem alt boşluk */
+  --mb-0-75: 0.75rem; /* 0.75rem alt boşluk */
+  --mb-1: 1rem; /* 1rem alt boşluk */
+  --mb-1-5: 1.5rem; /* 1.5rem alt boşluk */
+  --mb-2: 2rem; /* 2rem alt boşluk */
+  --mb-2-5: 2.5rem; /* 2.5rem alt boşluk */
+  --mb-3: 3rem; /* 3rem alt boşluk */
+
+  --z-fixed: 10; /* Z-index sabit */
+  --z-model: 100; /* Z-index model */
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--box-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Başlık stili */
+.admin-panel__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+/* Form stili */
+.admin-panel__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+
+.form__group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.form__group input[type="text"],
+.form__group input[type="number"],
+.form__group select,
+.form__group textarea,
+.form__group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form__group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: var(--skin-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.button:hover {
+  background-color: var(--box-color);
+}
+
+.admin-panel__table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px; /* Üst boşluk */
+}
+
+.admin-panel__table th,
+.admin-panel__table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+/* Buton stilleri */
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: var(--text-color);
+}
+
+.btn-edit:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: var(--text-color);
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
