@@ -138,7 +138,9 @@ Referans:
 Bu blog sitesi farklı renklerde aydınlık ve karanlık temalarda kullanılabilir.
 
 ![tema](projeTanitim/tema.png)
+
 ![aydinlikTema](projeTanitim/aydinlikTema.png)
 
 Web sitesi, farklı ekran boyutlarına uygunluk gösterir.
+
 ![responsive](projeTanitim/responsive.png)
